@@ -1,51 +1,45 @@
-# Boooply Mail — Public Beta Releases
+# Boooply Mail — Beta Releases
 
-This repository provides official public-beta downloads, checksums, release
-notes, and installation instructions for Boooply Mail.
+Official Boooply Mail installers, checksums, and release notes.
+
+## Invitation-only beta
+
+Boooply Mail is currently available only to invited testers. Downloading the
+app does not create an account or provide access. An invitation and an active
+account are required to sign in.
+
+Do not share invitation links or request access through a public GitHub issue.
+
+## Availability
+
+No beta installer has been published yet. Verified installers will appear on
+the [Releases](../../releases) page when they are ready.
+
+The first beta will support:
+
+- macOS on Apple Silicon (`arm64`)
+- macOS on Intel (`x64`)
+
+Windows support will be released and tested separately.
+
+## macOS notice
+
+The macOS beta is ad-hoc signed and is not notarized by Apple. macOS may block
+the first launch. Follow the safe **Open Anyway** steps in the installation
+guide and never disable Gatekeeper globally.
+
+## Guides
+
+- [Install on macOS](docs/install-macos.md)
+- [Verify a download](docs/verify-checksums.md)
+- [Security policy](SECURITY.md)
+
+## Support
+
+Invited testers may use [Issues](../../issues) for non-sensitive installation
+and beta problems. Never post credentials, invitation links, mailbox content,
+or private logs. Report suspected vulnerabilities through the private process
+in [SECURITY.md](SECURITY.md).
 
 The application source code is maintained separately and is not published in
 this repository.
-
-## Current availability
-
-No public beta has been published yet.
-
-When a tested beta is ready, installers will be available from the
-[Releases](../../releases) page.
-
-## Supported platforms
-
-The first public beta is planned for:
-
-- macOS on Apple Silicon
-- macOS on Intel
-
-Windows support is planned separately and will not be inferred from the macOS
-builds.
-
-## Important macOS security notice
-
-The initial macOS public beta will be ad-hoc signed. It will not be signed with
-an Apple Developer ID and will not be notarized by Apple.
-
-Because of this, macOS may prevent the application from opening normally after
-download. The release instructions will explain how to use the per-application
-**Open Anyway** option in macOS System Settings.
-
-You should never disable Gatekeeper globally.
-
-Only download Boooply Mail from the Releases page of this official repository.
-
-## Verifying a download
-
-Each release will include:
-
-- An installer for Apple Silicon
-- An installer for Intel Macs
-- A `SHA256SUMS.txt` checksum file
-- A release manifest describing the source revision and build
-
-Before installing, download the checksum file and verify the installer:
-
-```bash
-shasum -a 256 -c SHA256SUMS.txt
