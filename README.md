@@ -12,15 +12,25 @@ Do not share invitation links or request access through a public GitHub issue.
 
 ## Availability
 
-No beta installer has been published yet. Verified installers will appear on
-the [Releases](../../releases) page when they are ready.
+The Boooply Mail v0.1.3 public beta is available to invited testers from the
+[official release](../../releases/tag/desktop-v0.1.3). Downloading the app does
+not provide access without an invitation and active account.
 
-The first beta will support:
+The current beta supports:
 
 - macOS on Apple Silicon (`arm64`)
 - macOS on Intel (`x64`)
 
 Windows support will be released and tested separately.
+
+## What's new in v0.1.3
+
+- Adds in-app notifications when a future Boooply Mail beta update is available.
+- Lets testers download an update and restart the app to install it.
+- Shows the installed desktop version in the application's left rail.
+
+Existing testers must install v0.1.3 manually once. The in-app updater will
+then be available for later beta releases.
 
 ## macOS notice
 
